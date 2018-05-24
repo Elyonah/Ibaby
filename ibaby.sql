@@ -55,8 +55,8 @@ CREATE TABLE `babyfoot` (
 
 INSERT INTO `babyfoot` (`createdAt`, `updatedAt`, `id`, `place`, `maxPlayers`, `available`) VALUES
 (1524142301059, 1527180645072, 1, '"Bar de la Joconde"', 4, 0),
-(1524142325696, 1527180835929, 2, 'BordeauxCentre', 4, 0),
-(1524142337431, 1527182232068, 3, 'Place Baccalan', 4, 0);
+(1524142325696, 1527180835929, 2, 'BordeauxCentre', 4, 1),
+(1524142337431, 1527182232068, 3, 'Place Baccalan', 4, 1);
 
 -- --------------------------------------------------------
 
@@ -80,7 +80,7 @@ CREATE TABLE `booking` (
 --
 
 INSERT INTO `booking` (`createdAt`, `updatedAt`, `id`, `date`, `hour`, `players`, `babyfoot`, `owner`) VALUES
-(1527172530151, 1527172530151, 1, 1527285600000, 17, 2, NULL, 1),
+(1527172530151, 1527172530151, 1, 1527285600000, 17, 2, 1, 1),
 (1527172583831, 1527172583831, 2, 1527285600000, 17, 2, 2, 1);
 
 -- --------------------------------------------------------
