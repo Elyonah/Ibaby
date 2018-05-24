@@ -2,11 +2,13 @@
 Projet de WEB IOT
 
 
-##Configurations
+## Configurations
 Pour ce projet, j'ai utilisé une BDD avec WAMP, dans une base de données MYSQL nommée "ibaby"
 Les configurations sont présentes dans le fichier "ibaby/config/datastores.js"
 User: root
 PDW : "" (vide)
+
+Un fichier SQL est disponible avec la base de données complète.
 
 Pour lancer l'API, rendez-vous dans le dossier source et exécuter
 `npm install` puis `sails lift`
@@ -16,7 +18,7 @@ Pour lancer l'application, rendez-vous dans le dossier app/ibaby et exécuter
 
 Quand on clique sur "se connecter", un utilisateur déjà enregistré dans la base de donnée est saisi. Vous n'avez plus qu'à cliquer sur : "Se connecter"
 
-##Avancée dans le travail
+## Avancée dans le travail
 J'ai pris beaucoup de retard sur ce projet, mais voici les fonctionnalités qui sont présentes :
 * Connexion / Déconnexion (menu personnalisé, connexion avec l'api et déconnexion avec le storage d'IONIC)
 * Inscription à l'application (création d'un compte faite en cours)
