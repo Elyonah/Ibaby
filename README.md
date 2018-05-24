@@ -16,7 +16,9 @@ Pour lancer l'API, rendez-vous dans le dossier source et exécuter
 Pour lancer l'application, rendez-vous dans le dossier app/ibaby et exécuter 
 `npm install` puis `ionic serve`
 
-Quand on clique sur "se connecter", un utilisateur déjà enregistré dans la base de donnée est saisi. Vous n'avez plus qu'à cliquer sur : "Se connecter"
+Quand on clique sur "se connecter", un utilisateur déjà enregistré dans la base de donnée est saisi. Vous n'avez plus qu'à cliquer sur : "Se connecter".
+
+Aucun match n'est inséré dans la BDD, il faut donc en ajouter en passant par le menu "Babyfoot" -> Start a match !
 
 ## Avancée dans le travail
 J'ai pris beaucoup de retard sur ce projet, mais voici les fonctionnalités qui sont présentes :
