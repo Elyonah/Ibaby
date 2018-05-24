@@ -1,4 +1,4 @@
-# Ibaby
+﻿# Ibaby
 Projet de WEB IOT
 
 
@@ -8,9 +8,11 @@ Les configurations sont présentes dans le fichier "ibaby/config/datastores.js"
 User: root
 PDW : "" (vide)
 
-Pour lancer l'API, rendez-vous dans le dossier source et exécuter un sails lift
+Pour lancer l'API, rendez-vous dans le dossier source et exécuter
+`npm install` puis `sails lift`
 
-Pour lancer l'application, rendez-vous dans le dossier app/ibaby et exécuter un ionic serve
+Pour lancer l'application, rendez-vous dans le dossier app/ibaby et exécuter 
+`npm install` puis `ionic serve`
 
 Quand on clique sur "se connecter", un utilisateur déjà enregistré dans la base de donnée est saisi. Vous n'avez plus qu'à cliquer sur : "Se connecter"
 

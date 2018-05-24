@@ -1,0 +1,9 @@
+ibaby/.idea
+ibaby/.tmp
+ibaby/node_modules
+ibaby/package-lock.json
+app/.idea
+app/ibaby/.git
+app/ibaby/.sourcemaps
+app/ibaby/node_modules
+app/ibaby/package-lock.json
