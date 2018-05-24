@@ -1,5 +1,5 @@
 ﻿# Ibaby
-Projet de WEB IOT
+Projet de WEB IOT - Estelle Mucignato
 
 
 ## Configurations
