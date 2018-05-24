@@ -33,7 +33,10 @@ export class MatchDetailsPage {
         this.redScore = this.currentMatch.redScore;
         this.inProgress = this.currentMatch.isInProgress;
         console.log(this.players);
-
+      
+      
+        //L'ajout ci-dessous dans UserMatch devrait se faire avant d'arriver sur la page, mais je me suis un peu perdue dans le code.
+        //Elle fait buguer l'application quand on revient sur la page de détail d'un match
         for (let i = 0; i < this.players.length; i++) {
             let color = [
                 "blue",
