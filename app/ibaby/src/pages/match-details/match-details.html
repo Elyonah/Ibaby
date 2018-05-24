@@ -1,0 +1,37 @@
+<!--
+  Generated template for the MatchDetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ "MATCHINPROGRESS" | translate}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>{{currentBaby.place}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>{{"NUMBERPLAYER" | translate}}: {{players.length}}/4</p>
+
+     <ion-col left>
+
+     </ion-col>
+      <ion-col left>
+          {{ "BLUESCORE" | translate}}
+          <ion-badge item-end>{{blueScore}}</ion-badge>
+      </ion-col>
+        <ion-col right>
+            {{ "REDSCORE" | translate}}
+            <ion-badge color="danger" item-end>{{redScore}}</ion-badge>
+        </ion-col>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

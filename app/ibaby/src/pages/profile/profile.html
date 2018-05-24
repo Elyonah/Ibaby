@@ -1,0 +1,61 @@
+<!--
+  Generated template for the ProfilePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{user.firstname}} {{user.lastname}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-card>
+    <ion-item>
+      <h2>{{user.firstname}} {{user.lastname}}</h2>
+      <p>{{user.email}}</p>
+      <p>{{user.phone}}</p>
+      <a href="{{user.website}}" target="_blank">{{user.website}}</a>
+    </ion-item>
+    <ion-row>
+      <ion-col>
+        <ion-note right>
+          {{ 'ADDED_ON' | translate }} {{user.createdAt | date}}
+        </ion-note>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card>
+      <ion-item *ngIf="user.team">
+        <ion-icon name="people" item-start large></ion-icon>
+        <h2>{{"MYTEAM" | translate}}</h2>
+        <p>{{user.team.name || ''}}</p>
+      </ion-item>
+      <ion-item *ngIf="user.team">
+        <ion-list>
+          <ion-list-header>
+            {{"MEMBERS" | translate}}
+          </ion-list-header>
+
+          <ion-item *ngFor="let member of team.members">
+            <ion-icon *ngIf="member.id === team.owner.id" name="contact" item-start></ion-icon>
+            {{member.firstname}} {{member.lastname}}
+            <ion-note *ngIf="member.id === team.owner.id" item-end>
+              {{"OWNER" | translate}}
+            </ion-note>
+          </ion-item>
+        </ion-list>
+        </ion-item>
+      <ion-item *ngIf="user.team == null">
+        <ion-icon name="people" item-start large></ion-icon>
+        <h2>{{"TEAM" | translate}}</h2>
+        <p>{{"NOTEAM" | translate}}</p>
+
+      </ion-item>
+  </ion-card>
+</ion-content>

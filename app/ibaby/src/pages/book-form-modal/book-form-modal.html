@@ -1,0 +1,33 @@
+<!--
+  Generated template for the BookFormModalPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{"BOOKBABY" | translate}}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+<ion-content padding>
+    <form>
+        <ion-item>
+            <ion-label stacked>{{"DATE" | translate}}</ion-label>
+            <ion-datetime [(ngModel)]="form.date" displayFormat="MM/DD/YYYY" name="date" type="date"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>{{"HOUR" | translate}}</ion-label>
+            <ion-datetime [(ngModel)]="form.hour" displayFormat="HH" name="hour" type="date"></ion-datetime>
+        </ion-item>
+        <ion-item>
+            <ion-label stacked>{{"NUMBERPLAYER" | translate}}</ion-label>
+            <ion-select [(ngModel)]="form.number" name="number">
+                <ion-option value="2">2</ion-option>
+                <ion-option value="4">4</ion-option>
+            </ion-select>
+        </ion-item>
+        <button ion-button block (click)="CloseModal()">{{"BOOKBABY" | translate}}</button>
+    </form>
+</ion-content>
